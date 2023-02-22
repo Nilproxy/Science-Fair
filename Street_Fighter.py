@@ -77,7 +77,7 @@ def eval_genomes(genomes, config):
 config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, 
 neat.DefaultStagnation, 'config-feedforward-SF2')
 p = neat.Population(config)
-p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-100')
+p = neat.Checkpointer.restore_checkpoint('neat-checkpoint-0')
 p.add_reporter(neat.StdOutReporter(True))
 stats = neat.StatisticsReporter()
 p.add_reporter(stats)
